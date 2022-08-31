@@ -65,7 +65,7 @@ class _HeaderState extends State<Header> with TickerProviderStateMixin {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 6),
+            padding: const EdgeInsets.symmetric(horizontal: 5),
             child: IconButton(
                 icon: widget.decoration!.cancelIcon ??
                     Icon(Icons.arrow_back_outlined),
@@ -76,7 +76,7 @@ class _HeaderState extends State<Header> with TickerProviderStateMixin {
                 }),
           ),
           Expanded(
-            flex: 3,
+            flex: 2,
             child: Center(
               child: JumpingButton(
                 child: Row(

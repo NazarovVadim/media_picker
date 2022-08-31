@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Media Picker',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(),
     );
@@ -87,11 +87,11 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             onCancel: () => Navigator.pop(context),
             mediaCount: MediaCount.multiple,
-            mediaType: MediaType.image,
+            mediaType: MediaType.all,
             decoration: PickerDecoration(
               actionBarPosition: ActionBarPosition.top,
               blurStrength: 2,
-              completeText: 'Next',
+              completeText: 'Выбрать',
             ),
           );
         });
